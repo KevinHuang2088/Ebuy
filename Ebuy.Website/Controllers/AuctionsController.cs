@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Ebuy.Website.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -38,18 +39,19 @@ namespace Ebuy.Website.Controllers
 
         // POST: Auctions/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(Auction auction)
         {
-            try
-            {
-                // TODO: Add insert logic here
+            //try
+            //{
+            //    // TODO: Add insert logic here
 
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+            //    return RedirectToAction("Index");
+            //}
+            //catch
+            //{
+            //    return View();
+            //}
+            return View(auction);
         }
 
         // GET: Auctions/Edit/5
