@@ -113,7 +113,6 @@ C:\Users\KevinHuang2088\source\repos\Ebuy\Ebuy.Website\bin\Microsoft.AI.Dependen
 C:\Users\KevinHuang2088\source\repos\Ebuy\Ebuy.Website\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\KevinHuang2088\source\repos\Ebuy\Ebuy.Website\bin\Microsoft.AI.Web.xml
 C:\Users\KevinHuang2088\source\repos\Ebuy\Ebuy.Website\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\KevinHuang2088\source\repos\Ebuy\Ebuy.Website\obj\Debug\Ebuy.Website.csprojAssemblyReference.cache
 C:\Users\KevinHuang2088\source\repos\Ebuy\Ebuy.Website\obj\Debug\Ebuy.Website.csproj.CoreCompileInputs.cache
 C:\Users\KevinHuang2088\source\repos\Ebuy\Ebuy.Website\obj\Debug\Ebuy.Website.csproj.CopyComplete
 C:\Users\KevinHuang2088\source\repos\Ebuy\Ebuy.Website\obj\Debug\Ebuy.Website.dll
