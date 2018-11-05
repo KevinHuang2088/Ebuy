@@ -9,6 +9,6 @@ namespace Ebuy.Website.EF
 {
     public class EbuyDataContext : DbContext
     {
-        public DbSet<Auction> Actions { get; set; }
+        public DbSet<Auction> Auctions { get; set; }
     }
 }

@@ -42,19 +42,13 @@ namespace Ebuy.Website.Controllers
         [HttpPost]
         public ActionResult Create(Auction auction)
         {
-            var db = new EbuyDataContext();
-            db.Actions.Add(auction);
-            db.SaveChanges();
-            //try
-            //{
-            //    // TODO: Add insert logic here
-
-            //    return RedirectToAction("Index");
-            //}
-            //catch
-            //{
-            //    return View();
-            //}
+            if (ModelState.IsValid)
+            {
+                var db = new EbuyDataContext();
+                db.Auctions.Add(auction);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
             return View(auction);
         }
 
