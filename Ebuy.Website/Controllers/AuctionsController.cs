@@ -42,6 +42,13 @@ namespace Ebuy.Website.Controllers
         [HttpPost]
         public ActionResult Create(Auction auction)
         {
+            if (auction.EndTime <= DateTime.Now.AddDays(1))
+            {
+                ModelState.AddModelError(
+                    "EndTime",
+                    "Auction must be at least one day long");
+            }
+
             if (ModelState.IsValid)
             {
                 var db = new EbuyDataContext();
