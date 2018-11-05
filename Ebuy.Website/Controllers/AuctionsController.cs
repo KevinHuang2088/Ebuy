@@ -1,4 +1,5 @@
-﻿using Ebuy.Website.Models;
+﻿using Ebuy.Website.EF;
+using Ebuy.Website.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -41,6 +42,9 @@ namespace Ebuy.Website.Controllers
         [HttpPost]
         public ActionResult Create(Auction auction)
         {
+            var db = new EbuyDataContext();
+            db.Actions.Add(auction);
+            db.SaveChanges();
             //try
             //{
             //    // TODO: Add insert logic here
